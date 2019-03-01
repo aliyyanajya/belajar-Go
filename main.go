@@ -10,8 +10,15 @@ func main() {
 	fmt.Println("Sesuatu yang lain")
 
 	for i := 0; i < 100; i++ {
-		fmt.Println(i)
+		if i%2 == 0 {
+			fmt.Println(i)
+		}
 	}
+	bar()
+}
+
+func bar() {
+	fmt.Println("Keluar Program !")
 }
 
 func foo() {
